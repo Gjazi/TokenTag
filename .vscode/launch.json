@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://github.com/Gjazi/TokenTag",
+            "request": "launch",
+            "url": "https://github.com/Gjazi/TokenTag"
+        }
+    ]
+}
