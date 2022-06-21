@@ -11,6 +11,7 @@ describe('TokenTag', () => {
 
     
     cy.get(':nth-child(2) > .no-underline').click()
+    cy.wait(1000)
     cy.contains("Communities").click()
     cy.contains('About').click()
     cy.contains('Login').click()
