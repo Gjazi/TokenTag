@@ -34,7 +34,7 @@ jobs:
       uses: cypress-io/github-action@v4
       with:
         # Specify Browser since container image is compile with Firefox
-        browser: Chrome
+        browser: chrome
     - name: Coverage report
       run: |
         pip install coverage
