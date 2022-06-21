@@ -29,8 +29,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Cypress run
-      uses: cypress-io/github-action@v4
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          # Specify Browser since container image is compile with Firefox
+          browser: Safari
     - name: Coverage report
       run: |
         pip install coverage
