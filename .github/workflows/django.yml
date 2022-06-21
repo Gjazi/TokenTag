@@ -35,11 +35,4 @@ jobs:
       with:
         # Specify Browser since container image is compile with Firefox
         browser: chrome
-    - name: Coverage report
-      run: |
-        pip install coverage
-        coverage run manage.py test 
-        coverage report 
-    - name: Django Testing
-      run: |
-        python3 manage.py test
+        
